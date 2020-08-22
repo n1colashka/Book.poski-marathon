@@ -12,6 +12,7 @@
     &__items {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         max-width: 1140px;
         margin: 0 auto;

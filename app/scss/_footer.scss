@@ -3,6 +3,7 @@
     padding-bottom: 43px;
     &__top {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: 25px;
         color: #121212;
@@ -12,6 +13,13 @@
     &__top-link {
         @include font('rb-bold');
         font-size: 20px;
+        margin-right: 10px;
+    }
+
+    &__phone {
+        display: inline-block;
+        background: url('../images/phone.png') left no-repeat;
+        padding-left: 25px;
     }
 
     &__copy {
