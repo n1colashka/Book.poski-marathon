@@ -39,15 +39,13 @@
 		justify-content: center;
 		min-height: 660px;
 		padding: 40px;
-		// background: url('../images/right-bottom.png') right bottom,
-		// url('../images/left-bottom.png') left bottom,
-		// url('../images/right-header.png') right top 170px;
+		
 		background-image: url('../images/header-bg.jpg');
 		background-position: top center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		// background-color: #e94544;
 	}
+
 
 	&__title {
 		@include font('myra');
@@ -66,7 +64,6 @@
 		text-transform: uppercase;
 		margin-bottom: 60px;
 	}
-
 }
 
 .navigation {
