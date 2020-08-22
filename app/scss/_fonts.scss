@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("../fonts/Roboto-Regular.woff") format("woff"),
+  url("../fonts/Roboto-Regular.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Impact-Regular";
+  src: url("../fonts/Impact-Regular.woff2") format("woff2"),
+  url("../fonts/Impact-Regular.woff") format("woff"),
+  url("../fonts/Impact-Regular.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+  url("../fonts/Roboto-Medium.woff") format("woff"),
+  url("../fonts/Roboto-Medium.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+  url("../fonts/Roboto-Bold.woff") format("woff"),
+  url("../fonts/Roboto-Bold.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Myra4fcaps-Bold";
+  src: url("../fonts/Myra4fcaps-Bold.woff2") format("woff2"),
+  url("../fonts/Myra4fcaps-Bold.woff") format("woff"),
+  url("../fonts/Myra4fcaps-Bold.ttf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

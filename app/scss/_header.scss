@@ -1,0 +1,91 @@
+.header {
+	&__menu {
+		display: none;
+	}
+	&__wrapper {}
+
+	&__panel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__logo {}
+
+	&__logo-img {}
+
+	&__navigation {}
+
+
+	&__hero {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: 660px;
+		padding: 40px;
+		background: url('../images/right-bottom.png') right bottom,
+		url('../images/left-bottom.png') left bottom,
+		url('../images/right-header.png') right top 170px;
+		background-repeat: no-repeat;
+		background-color: #e94544;
+	}
+
+	&__title {
+		@include font('myra');
+		font-size: 115px;
+		line-height: normal;
+		letter-spacing: 0.25px;
+		text-transform: uppercase;
+		color: #ffffff;
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		letter-spacing: 0.5px;
+		color: #ffffff;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+
+	&__btn {}
+}
+
+.menu {}
+
+.navigation {
+	@include font('rb-medium');
+	font-size: 14px;
+	letter-spacing: 0.25px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, .75);
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		position: relative;
+		margin-left: 50px;
+		
+	}
+
+	&__link {
+		line-height: 40px;
+		&::before {
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 2px;
+			background-color: #e94544;
+			transition: .3s ease;
+		}
+		&:hover {
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+}

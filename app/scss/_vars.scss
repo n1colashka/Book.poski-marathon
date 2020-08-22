@@ -1,0 +1,28 @@
+@mixin font($name) {
+
+  @if $name == 'rb' {
+    font-family: 'Roboto-Regular', Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  @if $name == 'rb-medium' {
+    font-family: 'Roboto-Medium', Arial, sans-serif;
+    font-weight: 500;
+  }
+
+  @if $name == 'rb-bold' {
+    font-family: 'Roboto-Bold', Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  @if $name == 'impact' {
+    font-family: 'Impact-Regular', Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  @if $name == 'myra' {
+    font-family: 'Myra4fcaps-Bold', Arial, sans-serif;
+    font-weight: 700;
+  }
+
+}
