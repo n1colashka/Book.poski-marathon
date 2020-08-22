@@ -2,7 +2,13 @@
 
 @media(max-width: 1130px) {}
 
-@media(max-width: 1000px) {}
+@media(max-width: 1000px) {
+    .header {
+        &__navigation {
+            display: none;
+        }
+    }
+}
 
 @media(max-width: 914px) {}
 

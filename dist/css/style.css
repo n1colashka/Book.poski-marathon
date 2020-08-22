@@ -130,6 +130,30 @@ button {
   .socials__item {
     margin-left: 15px; }
 
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  position: absolute;
+  top: calc(50% - 50px);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  outline: none;
+  cursor: pointer;
+  width: 25px;
+  height: 40px;
+  left: 0; }
+
+.swiper-button-prev-custom {
+  background: url("../images/scroll-prev.png") no-repeat center; }
+
+.swiper-button-next-custom {
+  background: url("../images/scroll-next.png") no-repeat center;
+  left: auto;
+  right: 0; }
+
+.swiper-button-disabled {
+  opacity: .5; }
+
 .header {
   position: relative; }
   .header__panel {
@@ -369,18 +393,19 @@ button {
     margin-right: 32px; }
   .catalog__btn-wrapper {
     text-align: center; }
-  .catalog .swiper-button-next,
-  .catalog .swiper-button-prev {
-    top: calc(50% - 35px); }
-    .catalog .swiper-button-next::after,
-    .catalog .swiper-button-prev::after {
-      content: "";
-      height: 33px;
-      width: 20px; }
-  .catalog .swiper-button-prev::after {
-    background: url("../images/scroll-prev.png") no-repeat center; }
-  .catalog .swiper-button-next::after {
-    background: url("../images/scroll-next.png") no-repeat center; }
+  .catalog__inner {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 53px; }
 
 .catalog-slider__item {
   width: 210px; }
@@ -481,6 +506,7 @@ button {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
   .new__inner {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -490,7 +516,8 @@ button {
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0 53px; }
   .new__btn-wrapper {
     text-align: center;
     margin-top: 120px; }
@@ -510,7 +537,8 @@ button {
       border-radius: 0; }
 
 .new-slider {
-  height: 500px; }
+  height: 500px;
+  width: 100%; }
   .new-slider__item {
     max-width: 600px;
     width: 100%;

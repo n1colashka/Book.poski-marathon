@@ -10,8 +10,8 @@ $(function () {
         slidesPerView: 'auto',
         spaceBetween: 53,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom',
         },
     });
 
@@ -19,8 +19,8 @@ $(function () {
         slidesPerView: 'auto',
         spaceBetween: 30,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom',
         },
     });
 });

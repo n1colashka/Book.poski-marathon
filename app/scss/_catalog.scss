@@ -19,29 +19,14 @@
         text-align: center;
     }
 
-    // Swiper
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        top: calc(50% - 35px);
-        &::after {
-            content: "";
-            height: 33px;
-            width: 20px;
-        }
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 53px;
     }
 
-    .swiper-button-prev {
-        &::after {
-            background: url('../images/scroll-prev.png') no-repeat center;
-        }
-    }
-
-    .swiper-button-next {
-        &::after {
-            background: url('../images/scroll-next.png') no-repeat center;
-        }
-    }
 }
 
 .catalog-slider {
