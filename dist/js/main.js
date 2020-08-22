@@ -14,4 +14,13 @@ $(function () {
             prevEl: '.swiper-button-prev',
         },
     });
+
+    var newSwiper = new Swiper('.new__slider', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 });
