@@ -1,0 +1,50 @@
+.footer {
+    padding-top: 23px;
+    padding-bottom: 43px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        color: #121212;
+        letter-spacing: 0.25px;
+    }
+
+    &__top-link {
+        @include font('rb-bold');
+        font-size: 20px;
+    }
+
+    &__copy {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        padding: 32px;
+        padding-bottom: 5px;
+        border: 24px solid #121212;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__box {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        @include font('rb-bold');
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #121212;
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        color: #767676;
+    }
+}

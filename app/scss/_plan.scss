@@ -1,3 +1,48 @@
 .plan {
-    
+
+    padding: 130px 0;
+    background: url('../images/header-bg.jpg') center no-repeat;
+    background-size: cover;
+
+    &__title {
+        color: #ffffff;
+        margin-bottom: 65px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        position: relative;
+        text-align: center;
+        max-width: 360px;
+        background-color: #fff;
+        padding: 50px 40px;
+        height: 410px;
+    }
+
+    &__name {
+        @include font('myra');
+        letter-spacing: .5px;
+        font-size: 38px;
+        color: #343434;
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        color: #343434;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
+
