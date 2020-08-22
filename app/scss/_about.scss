@@ -1,0 +1,57 @@
+.about {
+    padding-bottom: 50px;
+
+    &__inner {
+        display: flex;
+        background: url('../images/section__about.jpg') center no-repeat;
+        background-size: cover;
+        padding: 110px 0;
+    }
+
+    &__box {
+        max-width: 525px;
+        width: 100%;
+        text-align: center;
+        padding: 73px 40px;
+        background-color: #fff;
+        margin: 0 auto;
+        box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &__title {
+        position: relative;
+        z-index: 5;
+        @include font('impact');
+        letter-spacing: 0.5px;
+        margin-bottom: 75px;
+        color: #404040;
+
+        &::before {
+            position: absolute;
+            z-index: -1;
+            content: "";
+            background: url('../images/about__book.png') center no-repeat;
+            width: 55px;
+            height: 65px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin-bottom: 45px;
+        color: rgba(#6a6a6a, .9);
+
+        p {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__btn {}
+}

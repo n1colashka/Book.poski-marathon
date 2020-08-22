@@ -57,9 +57,12 @@ button {
 .section-title {
   @include font('rb-bold');
   font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
 } 
 
 .btn {
+  display: inline-block;
   position: relative;
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -70,7 +73,7 @@ button {
   border-radius: 50px;
   min-width: 250px;
   text-align: center;
-  
+
   &::before {
     position: absolute;
     content: "";
@@ -80,7 +83,21 @@ button {
     bottom: 6px;
     right: 10px;
     border-radius: 50px;
+    transition: .3s ease;
   }
+
+  &:hover {
+    &::before {
+      
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.btn--red {
+  background-color: #e94544;
+  color: #ffffff;
 }
 
 .socials {
@@ -91,10 +108,4 @@ button {
     margin-left: 15px;
   }
 
-  &__img {
-  }
-
-  &__link {
-
-  }
 }
